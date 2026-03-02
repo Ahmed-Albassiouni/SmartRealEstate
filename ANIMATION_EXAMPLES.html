@@ -1,0 +1,217 @@
+<!-- 🎨 EXAMPLE: How to Use New Animations on Your Pages -->
+
+<!-- ================================================ -->
+<!-- 1️⃣ COUNTER ANIMATION EXAMPLE -->
+<!-- ================================================ -->
+<!-- Add these data attributes to any number element: -->
+
+<div class="flex gap-8 justify-center py-16">
+  <!-- مثال: عدد المشاريع المكملة -->
+  <div class="text-center">
+    <div class="text-5xl font-bold text-primary">
+      <span data-counter="520" data-suffix="+">520</span>
+    </div>
+    <p class="text-sm text-muted mt-2">مشاريع مكملة</p>
+  </div>
+
+  <!-- مثال: سنوات الخبرة -->
+  <div class="text-center">
+    <div class="text-5xl font-bold text-accent">
+      <span data-counter="15" data-suffix=" سنة">15</span>
+    </div>
+    <p class="text-sm text-muted mt-2">سنوات الخبرة</p>
+  </div>
+
+  <!-- مثال: نسبة الرضا -->
+  <div class="text-center">
+    <div class="text-5xl font-bold text-primary">
+      <span data-counter="98" data-suffix="%">98%</span>
+    </div>
+    <p class="text-sm text-muted mt-2">رضا العملاء</p>
+  </div>
+</div>
+
+
+<!-- ================================================ -->
+<!-- 2️⃣ FLOATING CARD WITH HOVER EFFECT -->
+<!-- ================================================ -->
+<div class="floating-card p-6 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+  <h3 class="gradient-text text-xl font-bold mb-3">خدمة احترافية</h3>
+  <p class="text-slate-600 dark:text-slate-300">
+    وصف الخدمة يظهر هنا مع تأثيرات جذابة وسلسة
+  </p>
+</div>
+
+
+<!-- ================================================ -->
+<!-- 3️⃣ GRADIENT TEXT ON HEADING -->
+<!-- ================================================ -->
+<h1 class="gradient-text text-4xl font-bold mb-8">
+  🚀 عنوان رئيسي متدرج الألوان
+</h1>
+
+
+<!-- ================================================ -->
+<!-- 4️⃣ STAGGERED LIST ITEMS -->
+<!-- ================================================ -->
+<ul class="space-y-4">
+  <li class="stagger-item flex gap-3 p-4 bg-blue-50 dark:bg-slate-900 rounded-lg hover-lift">
+    <span class="text-primary text-xl">✓</span>
+    <span>الميزة الأولى مع تأثير دخول متسلسل</span>
+  </li>
+  <li class="stagger-item flex gap-3 p-4 bg-blue-50 dark:bg-slate-900 rounded-lg hover-lift">
+    <span class="text-primary text-xl">✓</span>
+    <span>الميزة الثانية تظهر تدريجياً</span>
+  </li>
+  <li class="stagger-item flex gap-3 p-4 bg-blue-50 dark:bg-slate-900 rounded-lg hover-lift">
+    <span class="text-primary text-xl">✓</span>
+    <span>الميزة الثالثة بتأخير مخطط</span>
+  </li>
+</ul>
+
+
+<!-- ================================================ -->
+<!-- 5️⃣ CTA BUTTONS WITH ANIMATIONS -->
+<!-- ================================================ -->
+<div class="flex gap-4">
+  <!-- زر عادي بتأثير الرفع -->
+  <button class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover-lift transition">
+    احجز الآن
+  </button>
+
+  <!-- زر بتأثير النبض -->
+  <button class="px-8 py-3 bg-accent text-white rounded-lg font-medium pulse-cta">
+    اطلب عرض سعر
+  </button>
+
+  <!-- زر بحد متوهج -->
+  <div class="glow-border px-8 py-3 rounded-lg cursor-pointer text-center font-medium">
+    تعرف أكثر
+  </div>
+</div>
+
+
+<!-- ================================================ -->
+<!-- 6️⃣ NEON TEXT EFFECT -->
+<!-- ================================================ -->
+<h2 class="neon-text text-3xl font-bold">
+  ✨ نص مضيء و جذاب
+</h2>
+
+
+<!-- ================================================ -->
+<!-- 7️⃣ GRADIENT BACKGROUND ANIMATION -->
+<!-- ================================================ -->
+<div class="gradient-bg-animated p-8 rounded-xl text-white text-center">
+  <h3 class="text-2xl font-bold mb-3">عنوان برخلفية متحركة</h3>
+  <p>محتوى جذاب مع خلفية متدرجة الألوان</p>
+</div>
+
+
+<!-- ================================================ -->
+<!-- 8️⃣ BREATHING EFFECT (Subtle Animation) -->
+<!-- ================================================ -->
+<div class="breathing p-6 bg-green-100 dark:bg-green-900 rounded-lg">
+  <p class="text-green-900 dark:text-green-100">
+    ⏱️ عنصر ينبض بخفة - مناسب للتنويهات الهادئة
+  </p>
+</div>
+
+
+<!-- ================================================ -->
+<!-- 9️⃣ TEXT REVEAL EFFECT -->
+<!-- ================================================ -->
+<h2 class="text-reveal text-3xl font-bold mb-6">
+  نص يكتشف نفسه بتأثير جميل
+</h2>
+
+
+<!-- ================================================ -->
+<!-- 🔟 SHIMMER EFFECT (For Loading States) -->
+<!-- ================================================ -->
+<div class="h-20 bg-slate-200 dark:bg-slate-700 shimmer rounded-lg mb-4"></div>
+<div class="h-20 bg-slate-200 dark:bg-slate-700 shimmer rounded-lg"></div>
+
+
+<!-- ================================================ -->
+<!-- 🛒 FORM INPUTS WITH ANIMATIONS -->
+<!-- ================================================ -->
+<form class="space-y-4">
+  <div>
+    <label class="block text-sm font-medium mb-2">الاسم</label>
+    <input 
+      type="text" 
+      class="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none"
+      placeholder="أدخل اسمك"
+    />
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium mb-2">البريد الإلكتروني</label>
+    <input 
+      type="email" 
+      class="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none"
+      placeholder="أدخل بريدك"
+    />
+  </div>
+
+  <button class="w-full px-6 py-3 bg-primary text-white rounded-lg font-medium hover-lift">
+    إرسال الآن
+  </button>
+</form>
+
+
+<!-- ================================================ -->
+<!-- CSS Classes Reference -->
+<!-- ================================================ -->
+<!--
+✨ Classes متاحة للاستخدام مباشرة:
+
+🎯 Text Effects:
+- gradient-text        → نص متدرج الألوان
+- neon-text           → نص مضيء جذاب
+- text-reveal         → نص يكتشف نفسه
+- typewriter          → تأثير الكتابة
+- color-shift-text    → نص يتغير لونه
+
+🎨 Box Effects:
+- floating-card       → بطاقة عائمة بظل
+- hover-lift          → ترفع عند التمرير
+- glow-border         → حد متوهج
+- gradient-bg-animated → خلفية متدرجة متحركة
+- shimmer             → تأثير الإضاءة
+
+🎬 Animation States:
+- breathing           → تنفس خفيف
+- pulse-cta          → نبضات على زر
+- scale-fade         → تكبير مع خفوت
+- bounce-animation   → قفز ناعم
+- wobble-once        → اهتزاز عند التمرير
+
+🎯 Utility Classes:
+- stagger-item       → تأخير متسلسل لعناصر متعددة
+- slide-down         → دخول من الأعلى
+- slide-up           → دخول من الأسفل
+- line-draw          → رسم خطوط متحركة
+
+Data Attributes:
+- data-counter       → للأرقام المتحركة
+- data-suffix        → إضافة نص بعد الأرقام
+- data-animation     → نوع التأثير (fade-up, fade-in)
+-->
+
+<!-- ================================================ -->
+<!-- 💡 TIPS FOR BEST RESULTS -->
+<!-- ================================================ -->
+<!--
+1. استخدم gradient-text للعناوين الرئيسية
+2. أضف floating-card على بطاقات الخدمات والمشاريع
+3. استخدم stagger-item للقوائم والميزات
+4. أضف pulse-cta على أزرار الاتصال المهمة
+5. استخدم glow-border على عناصر مميزة
+6. أضف shimmer للحقول أثناء التحميل
+7. استخدم breathing للتنويهات الهادئة
+8. أضف text-reveal للمحتوى الطويل
+9. استخدم hover-lift على البطاقات القابلة للنقر
+10. أضف counter data attributes على الأرقام المهمة
+-->

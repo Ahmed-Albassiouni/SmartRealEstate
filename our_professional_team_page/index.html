@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Meet Our Team - ConstructCo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<link href="../shared/branding.css" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-3xl">construction</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ConstructCo</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">About Us</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Services</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Our Team</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Contact</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get a Quote</span>
+</button>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</header>
+<main class="flex-1">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<!-- Hero / Intro -->
+<div class="flex flex-col md:flex-row justify-between gap-6 p-4 mb-8">
+<div class="flex flex-col gap-3 max-w-2xl">
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                                    Meet Our Leadership Team
+                                </h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg font-normal leading-relaxed">
+                                    The dedicated professionals driving excellence in every project. We combine technical expertise with a passion for quality finishing and maintenance.
+                                </p>
+</div>
+</div>
+<!-- Stats Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 py-6 mb-12">
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 items-center text-center shadow-sm">
+<p class="text-primary tracking-tight text-4xl font-black leading-tight">25+</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-sm">calendar_month</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Years of Experience</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 items-center text-center shadow-sm">
+<p class="text-primary tracking-tight text-4xl font-black leading-tight">150+</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-sm">apartment</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Projects Completed</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 items-center text-center shadow-sm">
+<p class="text-primary tracking-tight text-4xl font-black leading-tight">12</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-sm">emoji_events</span>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Industry Awards</p>
+</div>
+</div>
+</div>
+<!-- Team Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 mb-16">
+<!-- Team Member 1 -->
+<div class="group flex flex-col gap-4 bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-full aspect-[4/5] bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional man in suit smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBK1L_xDLEq_B76Yknwy2e-k9BTNhtqsuzPTznRQQNILRQ_VR7I7KgycC3nHO26HwoyXUbqK_dJ7wFAbIL1-P_yIJqO25XRdB1RDo7BpEqtNraCMWGuvNJoeXGn8yChEK8lVTluxaDs3PgVmScaIj7CenB5isqn09Gsm3rrdP8kyZzdAz2ce9lTdgCng5BH51hZCnxbYvC4_ihWlJ5geWcgS4hqfBmXnhvn1L2_yLshc1x8egeB23GRfUIQ6tIbHNEIydO4Wr_QC_I");'></div>
+</div>
+<div class="px-5 pb-6 pt-2">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">CEO &amp; Founder</p>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight mb-2">Ahmed Al-Mansoor</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">
+                                        Leading with vision for 20 years. Ahmed ensures every blueprint turns into a masterpiece.
+                                    </p>
+<p class="text-slate-400 dark:text-slate-500 text-xs italic font-serif leading-relaxed text-right dir-rtl" dir="rtl">
+                                        Leadership with strategic vision for over 20 years, ensuring every plan becomes measurable business value.
+                                    </p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group flex flex-col gap-4 bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-full aspect-[4/5] bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Professional woman in business attire smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC39jWFouxvifXQcxU8gPfN3GNQBts6MC1iECqAWfK-w6a_zIWRX2xnSyB1HTt9VR5d02-3Aacv16ZwDOV1rAX3T23aLkvSMN249RCQ02cxkiUx_Ymh7pZ1BMpW_5WaIHjCoWoL_nYO8KZDRJS7X-J93HmMXuYttmu8HfN-IfdcJqlbnX7vORklyEDSPeiW5Ov7Y3AHsXb6amyqKtjfeqUTE0fShnUYVj9tRb1TZN7bzkSuVAxGpR1j3SygLFDkue-Uwx7-iRPz7L0");'></div>
+</div>
+<div class="px-5 pb-6 pt-2">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Operations Director</p>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight mb-2">Sarah Johnson</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">
+                                        Optimizing workflows and efficiency. Sarah is the backbone of our daily operations.
+                                    </p>
+<p class="text-slate-400 dark:text-slate-500 text-xs italic font-serif leading-relaxed text-right dir-rtl" dir="rtl">
+                                        Optimizing workflows and efficiency, Sarah is the operations backbone of our daily delivery.
+                                    </p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group flex flex-col gap-4 bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-full aspect-[4/5] bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Man in hard hat and safety vest smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmIIu2A21y25xxPXr0PSou-nOtMG__UzwRytLfjG44wqLp2nhcFRAf6l9_aPmCpl8qCm1HudDmAwnnVfwKX4iiKGtsCBcpSWLE0JT3YhMJM7k0HVcRjZT0GlBEPsORwclIOMZcTurUEGbS0F41O7USL5vTcfvreqj6uaVagop7mtf9rbtfYE-vNcyG3zcSOMUAiRz7uQxILjhnTnV_e48LcaW8YGNk6COYvv7EVgvwZomvbObVCZtxC5KwMhmC2NOWsJ0N0wt6pNM");'></div>
+</div>
+<div class="px-5 pb-6 pt-2">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Senior Civil Engineer</p>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight mb-2">Khalid Hassan</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">
+                                        Expert in structural integrity. Khalid brings precision to every beam and pillar.
+                                    </p>
+<p class="text-slate-400 dark:text-slate-500 text-xs italic font-serif leading-relaxed text-right dir-rtl" dir="rtl">
+                                        Structural integrity specialist, Khalid adds precision and safety to every core element.
+                                    </p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group flex flex-col gap-4 bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="w-full aspect-[4/5] bg-slate-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Young professional man smiling outdoors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDn20if3jUws9l8V9LOPCjIBdDchLHggEqLAJMyhDxQIqNAmOTIY4m85Q3Yo9MdxyCuFR98zIoiIbXIGPdOamm8unHl8DHS76lAvf-w_oHVhdc4UEXxqjvy1v7dLU52JrbkFKHWiVb42sfyZ4XN_dmz82H0vOsvtCffq6qD7Q8aZ78-7MHFY_FPk6wNhXMvkbaX9NUYdh3Y3pyoVP1LFRe-vd1bps46LLclDEdAu_YOgIZBec9Qk8L7sFgDcNVAk1kHDSM3KF2WuvI");'></div>
+</div>
+<div class="px-5 pb-6 pt-2">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Project Manager</p>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight mb-2">Michael Chen</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">
+                                        Ensuring timely project delivery. Michael bridges the gap between client dreams and reality.
+                                    </p>
+<p class="text-slate-400 dark:text-slate-500 text-xs italic font-serif leading-relaxed text-right dir-rtl" dir="rtl">
+                                        Ensuring on-time delivery, Michael bridges client vision with practical execution.
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Values Section -->
+<div class="flex flex-col gap-10 px-4 py-10 rounded-2xl bg-slate-100 dark:bg-slate-800/50 @container">
+<div class="flex flex-col gap-4 items-center text-center">
+<h2 class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight max-w-[720px]">
+                                    Why Our Team Stands Out
+                                </h2>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal max-w-[600px]">
+                                    We don't just build structures; we build relationships founded on trust, safety, and expertise.
+                                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-0">
+<!-- Feature 1 -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 flex-col items-center text-center hover:border-primary/50 transition-colors">
+<div class="text-primary p-3 bg-primary/10 rounded-full mb-2">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Certified Experts</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-relaxed">Our engineers and technicians hold top industry certifications and undergo regular training.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 flex-col items-center text-center hover:border-primary/50 transition-colors">
+<div class="text-primary p-3 bg-primary/10 rounded-full mb-2">
+<span class="material-symbols-outlined text-3xl">security</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Safety First</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-relaxed">We prioritize rigorous safety protocols in every construction site to protect our team and yours.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-1 gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-6 flex-col items-center text-center hover:border-primary/50 transition-colors">
+<div class="text-primary p-3 bg-primary/10 rounded-full mb-2">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">Client Focused</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-relaxed">Dedicated to transparent communication and exceeding expectations from start to finish.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-10 px-10">
+<div class="layout-content-container max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-4 text-slate-900 dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-2xl">construction</span>
+</div>
+<span class="text-lg font-bold">ConstructCo</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 text-sm text-center md:text-right">
+<p>© 2024 ConstructCo. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+  <script defer src="../shared/site.js"></script>
+</body></html>
+
+
+
+
