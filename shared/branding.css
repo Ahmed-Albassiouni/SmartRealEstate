@@ -399,6 +399,130 @@ body[data-page="home"] .home-hero-copy {
   }
 }
 
+/* Additional responsive helpers for laptop / tablet / mobile
+   - Laptop: small layout tweaks for screens <=1280px
+   - Tablet: collapse some header/nav elements for <=1024px
+   - Mobile: stack content and simplify UI for <=767px */
+
+@media (max-width: 1280px) {
+  .site-shell {
+    width: calc(100% - 32px);
+    border-radius: 12px;
+  }
+
+  .site-brand-mark {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .site-brand-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .site-header {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .site-menu-btn {
+    display: inline-flex;
+  }
+
+  .site-actions { gap: 6px; }
+
+  .site-marketing-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .home-hero-title {
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .site-shell {
+    width: calc(100% - 16px);
+    border-radius: 10px;
+  }
+
+  .site-header {
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .site-brand-mark {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .site-brand-text .site-brand-subtitle {
+    display: none;
+  }
+
+  .site-brand-title {
+    font-size: 14px;
+  }
+
+  .site-link {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .site-cta {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .site-marketing-strip {
+    padding: 12px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .site-mobile-menu {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .home-hero-content { padding-inline: 8px; }
+
+  .home-hero-title { font-size: clamp(1.6rem, 9vw, 2.4rem); }
+
+  .backdrop-blur-md { display: none; }
+
+  /* Shrink main headings on small mobile screens so they don't overflow */
+  h1 {
+    font-size: clamp(1.25rem, 7.5vw, 1.8rem);
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: clamp(1rem, 5.5vw, 1.4rem);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: clamp(0.95rem, 4.2vw, 1.1rem);
+    line-height: 1.25;
+  }
+
+  .home-hero-title { font-size: clamp(1.4rem, 9.5vw, 2.2rem); }
+  .home-hero-subtitle { font-size: clamp(0.95rem, 5.2vw, 1.6rem); }
+}
+
 section,
 .grid,
 .layout-content-container,
