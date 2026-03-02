@@ -35,6 +35,7 @@
 <link href="../shared/branding.css" rel="stylesheet"/>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+    <script>try{if(!localStorage.getItem('site-theme'))localStorage.setItem('site-theme','light'); if(localStorage.getItem('site-theme')==='dark')document.documentElement.classList.add('dark');}catch(e){};</script>
 <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 <!-- Navbar -->
 <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-10 py-3">

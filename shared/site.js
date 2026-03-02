@@ -1576,11 +1576,8 @@
           var isHash = href.startsWith("#");
           if (!isHash) {
             e.preventDefault();
-            document.body.style.opacity = "0.8";
-            document.body.style.transition = "opacity 0.3s ease";
-            setTimeout(function () {
-              window.location.href = href;
-            }, 150);
+            // Navigate immediately to avoid visible flash and speed up response
+            window.location.href = href;
           }
         });
       }
@@ -1601,9 +1598,12 @@
     STATE.page = detectPage();
     STATE.pageKey = detectPageKey();
     STATE.lang = storageGet("site-lang", "en") === "ar" ? "ar" : "en";
+    // Ensure a default theme value exists (explicitly default to light)
+    if (storageGet("site-theme", null) === null) storageSet("site-theme", "light");
     STATE.theme = storageGet("site-theme", "light") === "dark" ? "dark" : "light";
     if (document.body) document.body.setAttribute("data-page", STATE.pageKey);
 
+    // Core setup (run synchronously)
     ensureBrandingCss();
     setupShell();
     buildHeader();
@@ -1621,23 +1621,35 @@
     safeRun("wireHelpfulAndReviews", wireHelpfulAndReviews);
     safeRun("wireMapZoom", wireMapZoom);
     safeRun("upgradeHeroImages", upgradeHeroImages);
+
+    // Performance optimizations first
     safeRun("optimizePerformance", optimizePerformance);
     safeRun("collectStaticContent", collectStaticContent);
 
-    // 🎨 Initialize Professional Animations
-    safeRun("initScrollProgressBar", initScrollProgressBar);
-    safeRun("initFloatingElements", initFloatingElements);
-    safeRun("initHeaderScrollEffect", initHeaderScrollEffect);
-    safeRun("initCounterAnimation", initCounterAnimation);
-    safeRun("initScrollRevealAnimation", initScrollRevealAnimation);
-    safeRun("initCardHoverEffects", initCardHoverEffects);
-    safeRun("initCTAButtonAnimation", initCTAButtonAnimation);
-    safeRun("initImageRevealAnimation", initImageRevealAnimation);
-    safeRun("initFormInputAnimation", initFormInputAnimation);
-    safeRun("initTextAnimations", initTextAnimations);
-    safeRun("initCTAAppearance", initCTAAppearance);
-    safeRun("initSmoothLinkTransition", initSmoothLinkTransition);
+    // Non-critical visual enhancements deferred to idle time to improve responsiveness
+    function deferredVisualInit() {
+      safeRun("initScrollProgressBar", initScrollProgressBar);
+      safeRun("initHeaderScrollEffect", initHeaderScrollEffect);
+      safeRun("initCounterAnimation", initCounterAnimation);
+      safeRun("initScrollRevealAnimation", initScrollRevealAnimation);
+      safeRun("initImageRevealAnimation", initImageRevealAnimation);
+      safeRun("initFormInputAnimation", initFormInputAnimation);
+      safeRun("initSmoothLinkTransition", initSmoothLinkTransition);
 
+      // Heavier/optional animations scheduled slightly later
+      setTimeout(function () {
+        safeRun("initFloatingElements", initFloatingElements);
+        safeRun("initCardHoverEffects", initCardHoverEffects);
+        safeRun("initCTAButtonAnimation", initCTAButtonAnimation);
+        safeRun("initTextAnimations", initTextAnimations);
+        safeRun("initCTAAppearance", initCTAAppearance);
+      }, 300);
+    }
+
+    if ('requestIdleCallback' in window) requestIdleCallback(deferredVisualInit, { timeout: 1000 });
+    else setTimeout(deferredVisualInit, 300);
+
+    // Apply saved user preferences
     setTheme(STATE.theme);
     setLanguage(STATE.lang);
   }
